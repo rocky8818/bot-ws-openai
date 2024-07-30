@@ -31,8 +31,8 @@ index 683a415..6ccf53c 100644
 +
 +            // Hacer la solicitud POST al servidor local
 +      try {
-+        await axios.post('http://localhost:4321/api/getqr', {
-+          ident: 'cid_326',
++        await axios.post(process.env.API_URL, {
++          ident: process.env.ROWENA_IDENT,
 +          qr: qr
 +        });
 +        console.log('QR info enviado al servidor.');
