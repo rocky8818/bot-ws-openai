@@ -5,7 +5,8 @@
     "main": "app.js",
     "scripts": {
         "pre-copy": "cd .. && npm run  copy.lib base-baileys-memory",
-        "start": "node app.js"
+        "start": "node app.js",
+        "postinstall": "patch-package"
     },
     "keywords": [],
     "dependencies": {
@@ -23,6 +24,8 @@
         "fluent-ffmpeg": "^2.1.3",
         "mime-types": "2.1.35",
         "openai": "^3.3.0",
+        "patch-package": "^8.0.0",
+        "postinstall": "^0.10.3",
         "wa-sticker-formatter": "4.4.4"
     },
     "author": "",
